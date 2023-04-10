@@ -1,0 +1,80 @@
+.actualite{
+    background: $white1;
+    margin-bottom: 50px;
+    .title{
+        padding: 30px;
+        text-align: center;
+    }
+    .sub-title{
+        padding-top: 20px;;
+    }
+    .father{
+        border-top: 2px solid rgb(237, 236, 236);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        @media screen and (max-width:1100px) {
+            display: block;
+        }
+        .left-part{
+            border-right: 2px solid rgb(237, 236, 236);
+        }
+        .right-part{
+            @media screen and (max-width:1100px) {
+                border-top: 2px solid rgb(237, 236, 236);
+            }
+        }
+        div{
+            text-align: center;
+            .date {
+                font-family: $font4;
+                padding: 20px 0;
+            }
+            .imgContainer{
+                width: 70%;
+                height: 45%;
+                min-width: 300px;
+                min-height: 200px;
+                padding: 0;
+                margin: 0 auto;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    transition: 0.4s ease-in-out;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            .p1 {
+                width: 80%;
+                margin: 0 auto;
+                text-align: left;
+                padding: 20px 0;
+            }
+            .readMore{
+                bottom: 0;
+                padding-bottom: 30px;
+                width: 95%;
+                font-family: $font2;
+                letter-spacing: 1px;
+                text-align: right;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+                a{
+                    color : $grey2;
+                }
+                &:hover{
+                    font-size: 1.1rem;
+                    color: $black1;
+                    letter-spacing: 4px;
+                    a{
+                        color: $black1;
+                    }
+                }
+            }
+        }
+        
+    }
+}

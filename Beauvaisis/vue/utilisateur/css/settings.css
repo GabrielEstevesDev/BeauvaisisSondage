@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+}
+
+#navbar .menu .left li:nth-child(5) {
+  background: white;
+}
+
+#navbar .menu .left li:nth-child(5) a {
+  color: black;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  width: 220px;
+  background: white;
+  font-family: "InterB", serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-right: 15px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-family: "InterB", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 30px;
+}
+
+#showHistChart {
+  font-size: 1.3rem;
+  width: auto;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+}

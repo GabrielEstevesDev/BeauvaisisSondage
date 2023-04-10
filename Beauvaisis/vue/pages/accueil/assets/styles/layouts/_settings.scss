@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "InterB";
+  src: url(../../../../fonts/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "InterL";
+  src: url(../../../../fonts/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "OpenL";
+  src: url(../../../../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: "MerriI";
+  src: url(../../../../fonts/Merriweather-LightItalic.ttf);
+}
+$font1: "InterB", serif;
+$font2: "InterL", sans-serif;
+$font3: "OpenL", sans-serif;
+$font4: "MerriI", sans-serif;
+$black1: black;
+$black2: #2e2d2d;
+$white1: white;
+$grey1: #737373;
+$grey2: #afa9a9;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../img/bg.png) fixed center/cover;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+li,
+a,
+i {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+#page {
+  width: 90%;
+  margin: 0 auto;
+}
+.title {
+  font-family: $font1;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
+}
+.sub-title {
+  font-family: $font2;
+}
+p {
+  color: $black2;
+  font-family: $font3;
+  line-height: 25px;
+  @media screen and (max-width: 800px) {
+    font-size: 0.9rem;
+  }
+}
+
+.btn {
+  width: 180px;
+  background: white;
+  font-family: $font1;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+#navbar .menu .left li:first-child {
+  background: white;
+}
+#navbar .menu .left li:first-child a {
+  color: black;
+}

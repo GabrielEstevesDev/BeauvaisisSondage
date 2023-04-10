@@ -1,0 +1,24 @@
+header{
+    min-height: 100vh;
+    @media screen and (max-width:900px) {
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    h1{
+        font-family: $font1;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        color: $white1;
+        text-align: center;
+        @media screen and (max-width:1200px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:700px) {
+            font-size: 1.3rem;
+        }
+    }
+}

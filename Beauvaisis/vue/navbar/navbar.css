@@ -1,0 +1,234 @@
+body {
+  background: url(../img/bg.png) fixed center/cover;
+}
+::after,::before{
+  content: none;
+}
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+li, a, i {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+
+#disconnected{
+  display: none;
+}
+
+
+
+#iprofil{
+  display: inline;
+}
+
+@font-face {
+    font-family: "InterB";
+    src: url(../pages/fonts/Inter-Bold.ttf);
+  }
+  li,a,i{
+      list-style-type: none;
+  }
+  a{
+      text-decoration: none;
+  }
+  li,a,i{
+      transition: 0.4s ease-in-out;
+  }
+  #navbar ul{
+      padding: 0 !important;
+      margin: 0 !important;
+  }
+
+  #navbar {
+      z-index: 1000;
+      font-family: "InterB", serif;
+      width: 80%;
+      margin: 0 auto;
+      background: rgba(66, 66, 66, 0.322);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.4s;
+    }
+    @media screen and (min-width: 900px) {
+      #navbar {
+        position: static;
+        transform: translateX(0);
+      }
+    }
+    @media screen and (max-width: 900px) {
+      #navbar {
+        position: relative;
+        background: rgba(66, 66, 66, 0.322);
+        width: 90%;
+      }
+    }
+    #navbar a {
+      color: rgb(255, 255, 255);
+    }
+    #navbar li {
+      font-family: "InterB", serif;
+      font-size: 1.1rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 25px 15px;
+      cursor: pointer;
+    }
+    #navbar #logo img {
+      display: none;
+    }
+    @media screen and (max-width: 900px) {
+      #navbar #logo img {
+        display: block;
+        height: 74px;
+        width: 130px;
+      }
+    }
+    #navbar .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 20;
+    }
+    @media screen and (max-width: 900px) {
+      #navbar .menu {
+        position: absolute;
+        top: 74px;
+        right: 0 !important;
+        width: 250px;
+        transform: translateX(200%);
+        flex-direction: column;
+        transition: 1s;
+      }
+      #navbar .menu li {
+        background: #737373;
+        text-align: center;
+        font-size: 0.8rem !important;
+      }
+      #navbar .menu a {
+        color: black;
+      }
+      #navbar .menu .left {
+        flex-direction: column;
+      }
+      #navbar .menu .left li {
+        border-bottom: 2px solid grey;
+      }
+      #navbar .menu .right {
+        background: #737373;
+        justify-content: space-around;
+      }
+    }
+    #navbar .menu .left {
+      display: flex;
+    }
+    #navbar .menu .left:hover li:not(:hover) {
+      background: none;
+    }
+    #navbar .menu .left:hover li:not(:hover) a {
+      color: white;
+    }
+    @media screen and (max-width: 900px) {
+      #navbar .menu .left:hover li:not(:hover) {
+        background: #737373 !important;
+        color: black !important;
+      }
+    }
+    /* #navbar .menu .left li:first-child {
+      background: white;
+    }
+    #navbar .menu .left li:first-child a {
+      color: black;
+    } */
+    #navbar .menu .left li:hover {
+      background: white;
+    }
+    #navbar .menu .left li:hover a {
+      color: #2e2d2d;
+    }
+    @media screen and (max-width: 1300px) {
+      #navbar .menu .left li {
+        font-size: 1rem !important;
+        padding: 25px 12px;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      #navbar .menu .left li {
+        font-size: 0.94rem !important;
+        padding: 25px 12px;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      #navbar .menu .left li {
+        font-size: 0.8rem !important;
+        padding: 25px 10px;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      #navbar .menu .left li {
+        font-size: 0.68rem !important;
+        padding: 25px 10px;
+      }
+    }
+    #navbar .right {
+      display: flex;
+      justify-content: space-around;
+    }
+    #navbar .right li {
+      font-size: 1.5rem;
+    }
+    #navbar .right li:hover i {
+      transform: scale(1.4);
+    }
+    @media screen and (max-width: 1300px) {
+      #navbar .right li {
+        font-size: 1.2rem !important;
+        padding: 25px 10px;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      #navbar .right li {
+        font-size: 1rem !important;
+      }
+    }
+    #navbar .toogle {
+      color: black;
+      display: none;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: 900px) {
+      #navbar .toogle {
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+      }
+      #navbar .toogle li {
+        font-size: 1.3rem !important;
+      }
+    }
+    
+    @media screen and (max-width: 900px) {
+      .fermer {
+        display: none;
+      }
+      .ouvrir {
+        display: block;
+      }
+      .open .ouvrir {
+        display: none;
+      }
+      .open .fermer {
+        display: block;
+      }
+      .open .menu {
+        transform: translateX(0) !important;
+      }
+    }

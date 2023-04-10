@@ -1,0 +1,157 @@
+#navbar {
+    z-index:1000;
+    font-family: $font1;
+    background: rgba(66, 66, 66, 0.322);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    @media screen and (min-width:900px) {
+        position: static;
+        transform: translateX(0);
+    }
+    @media screen and (max-width:900px) {
+        position: relative;
+        background: rgba(66, 66, 66, 0.322);
+        width: 90%;
+    }
+    a{
+        color: rgb(255, 255, 255);
+    }
+    li{
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 25px 15px;
+        cursor: pointer;
+    }
+    #logo img{
+        display: none;
+        @media screen and (max-width:900px) {
+            display: block;
+            height: 74px;
+            width: 130px;
+        }
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 20;
+        @media screen and (max-width:900px) {
+            position: absolute;
+            top: 74px;
+            right: 0 !important;
+            width: 250px;
+            transform: translateX(200%);
+            flex-direction: column;
+            transition: 1s;
+            li{
+                background: $grey1;
+                text-align: center;
+                font-size: 0.9rem  !important;
+            }
+            a{
+                color: $black1;
+            }
+            .left{
+                flex-direction: column;
+                li{
+                    border-bottom: 2px solid grey;
+                }
+            }
+            .right{
+                background: $grey1;
+                justify-content: space-around;
+            }
+        }
+        .left {
+            display: flex;
+            &:hover li:not(:hover){
+                background: none;
+                a{
+                    color: $white1;
+                }
+                @media screen and (max-width:900px) {
+                background: $grey1 !important ;
+                color: black !important;
+                }
+            }
+            li{
+                &:first-child{
+                    background: $white1;
+                    a{
+                        color: $black1;
+                    }
+                }
+                &:hover {
+                    background: $white1;
+                    a{
+                        color: $black2;
+                    }
+                }
+                @media screen and (max-width:1300px) {
+                    font-size: 1rem;
+                    padding: 25px 12px;
+                }
+                @media screen and (max-width:1070px) {
+                    font-size: 0.8rem;
+                    padding: 25px 10px;
+                }
+            } 
+        }  
+    }
+     .right{
+        display: flex;
+        justify-content: space-around;
+        li{
+            font-size: 1.5rem;
+            &:hover{
+                i{
+                    transform: scale(1.4);
+                }
+            }
+            @media screen and (max-width:1300px) {
+                font-size: 1.2rem;
+                padding: 25px 10px;
+            }
+        }
+    }
+    .toogle{
+        color: black;
+        display: none;
+        padding-right: 10px;
+        @media screen and (max-width:900px) {
+                display: block;
+                cursor: pointer;
+                z-index: 100;
+                li{
+                    font-size: 1.3rem;
+                }
+        } 
+        
+    }
+}
+@media screen and (max-width:900px) {
+    .fermer{
+        display: none;
+    }
+    .ouvrir{
+        display: block;
+    }
+    .open {
+        .ouvrir{
+            display: none;
+        }
+        .fermer {
+            display: block;
+        }
+        .menu{
+            transform: translateX(0) !important;
+        }
+    }
+}
+

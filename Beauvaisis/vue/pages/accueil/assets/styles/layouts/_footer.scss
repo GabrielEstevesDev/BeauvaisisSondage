@@ -1,0 +1,49 @@
+footer {
+    background: $white1;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    .title{
+        text-align: center;
+        padding: 40px 0 20px;
+    }
+    form{
+        font-family: $font3;
+        width:  300px;
+        margin: 0 auto;
+        label{
+            padding-bottom: 5px;
+            display: block;
+            color: $grey1;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        input{
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        textarea{
+            padding: 10px;
+            resize: none;
+            width: 300px;
+        }
+        .btn {
+            border: 1px solid $black2;
+            letter-spacing: 0;
+            display: block;
+            margin: 30px auto;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            letter-spacing: 1px;
+            box-shadow: 2px 1px 8px 7px rgba(28, 26, 29, 0.71);
+            &:hover{
+                transform: scale(1.05);
+                background: $black1;
+                color: $white1;
+                
+            }
+        }
+    }
+}

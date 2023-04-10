@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../TP Web/flipflop"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Site SAé"
+	}
+}

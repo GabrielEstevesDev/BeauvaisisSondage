@@ -1,0 +1,61 @@
+.scores {
+	margin: 50px 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+}
+
+table.scores {
+	border-collapse: collapse;
+	margin: auto;
+	width: 80%;
+	max-width: 600px;
+	/* Empêche le tableau de dépasser une certaine largeur */
+}
+
+table.scores th,
+table.scores td {
+	padding: 6px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+table.scores th {
+	background-color: #ff9800;
+	/* couleur d'arrière-plan */
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+	padding-top: 12px;
+	/* Décale le titre pour qu'il soit centré */
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	/* Met les titres en majuscule */
+	letter-spacing: 2px;
+	/* Ajoute un peu d'espace entre les lettres */
+	color: #fff;
+	/* couleur du texte */
+}
+
+table.scores tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table.scores tr:hover {
+	background-color: #ddd;
+}
+
+table.scores td.nutriscore {
+	width: 50%;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+table.scores td.scoresante {
+	width: 50%;
+	font-size: 16px;
+	line-height: 1.2;
+}

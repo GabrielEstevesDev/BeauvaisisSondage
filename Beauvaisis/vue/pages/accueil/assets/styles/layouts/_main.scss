@@ -1,0 +1,90 @@
+main {
+    background: $white1;
+    margin-bottom: 50px;
+    @media screen and (max-width:900px) {
+        padding-top: 50px;
+    }
+    .container {
+        padding: 60px;
+        text-align: center;
+        @media screen and (max-width:800px) {
+            padding: 30px;
+        }
+        h1{
+            font-family: $font1;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            @media screen and (max-width:1000px) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width:800px) {
+                font-size: 1.1rem;
+            }
+        }
+        .imgContainer{
+            width: 70%;
+            height: 60%;
+            min-width: 300px;
+            min-height: 200px;
+            padding:0;
+            margin: 0 auto;
+            #map{
+                height: 100%;
+                width: 100%;
+                min-width: 300px;
+                min-height: 200px;
+            }
+        }
+        p{
+           width: 90%;
+           margin: 40px auto 0;
+        }
+    }
+    .navBeauvais{
+        height: 70px;
+        background: $grey1;
+        display: flex;
+        font-family: $font2;
+        @media  screen and (max-width:900px) {
+            display: none;
+        }
+        p{
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 15px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid black;
+        }
+        ul {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                font-size: 0.8rem;
+                padding: 0 15px;
+                a{
+                    text-transform: uppercase;
+                    color: white;
+                }
+                &:hover {
+                    background: $white1;
+                    a{
+                        color: $grey1;
+                    }
+                }
+
+            }
+        }
+    }
+}

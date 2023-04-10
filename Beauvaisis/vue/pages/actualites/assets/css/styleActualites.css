@@ -1,0 +1,212 @@
+body{
+    --border : 0.15vw solid lightgray;
+    background-image: url("../img/beauvais.jpg");
+    background-attachment : fixed;
+    background-size: cover;
+    background-position : center;
+    font-size : 1vw;
+}
+@font-face {
+    font-family: "InterB";
+    src: url("./font/Inter-Bold.ttf");
+
+}
+@font-face {
+  font-family: "InterL";
+  src: url("./font/Inter-Light.ttf");
+
+}
+@font-face {
+  font-family: "OpenL";
+  src: url("./font/OpenSans-Light.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 20px 0;
+    font-size: 18 px;
+    font-family: OpenL;
+    color: #2e2d2d;
+    margin: 0 auto;
+}
+
+section{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+
+
+.IMG{
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+.Papa{
+    border-top: 2px solid rgb(237,236,236);
+    background-color: white;
+    display: grid;
+    grid-template-columns : 50% 50%;
+    margin: 0 auto;
+}
+.Titre{
+    text-align: center;
+    font-family: InterB;
+    font-size: 2rem;
+    margin : 0 auto;
+    background-color: white;
+    padding: 30px 0;
+    text-transform: uppercase;
+    letter-spacing:6px;
+}
+.TitreSecond {
+    padding-bottom: 30px;
+    height: 50px;
+    font-family: InterL;
+    text-transform: uppercase;
+    letter-spacing:3px;
+}
+#left-part{
+    border-right: 2px solid rgb(237,236,236);
+}
+.date {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom : 1.5vw;
+}
+.Children{
+    padding : 40px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.readMore {
+    bottom: 0;
+  padding-bottom: 30px;
+  width: 95%;
+  font-family: "InterL", sans-serif;
+  letter-spacing: 1px;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  color: #afa9a9;
+}
+
+.readMore a, a:link, a:visited, a:active, a:hover{
+    color: black;
+}
+.IMG:hover img{
+    width:100%;-webkit-transform:scale(1.3);transform:scale(1.3);-webkit-transition:1s ease-in-out;transition:1s ease-in-out
+}
+
+
+button{
+    cursor: pointer;
+    outline: none;
+    margin : 3% auto;
+    padding : 2% 0;
+    text-align: center;
+    display : block;
+    width : 20%;
+    height : 2vw;
+    font-size : 1vw;
+    border : 2px solid black;
+    background-color : white;
+    font-weight : bold;
+    line-height : 0;
+}
+
+button:hover{
+    color :rgb(70, 70, 70);
+    border : var(--border);
+    border-color : rgb(70, 70, 70);
+}
+
+button:active{
+    font-size : 0.9vw;
+    background-color : rgb(245,245,245);
+}
+
+.readMore{
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.readMore:hover {
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+@media screen and (max-width: 1500px){
+    p{
+        font-size: 20px;
+    }
+    .SousTitre{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    p{
+        width: 90%;
+        font-size: 22px;
+    }
+    
+    .Papa{
+        display: block;
+    }
+    p{
+        width: 90%;
+    }
+    #left-part{
+        border-right: 0px 
+    }
+    .Children{
+      border-bottom:2px solid rgb(237,236,236)
+    }
+
+}
+
+@media screen and (max-width : 900px) {
+    section{
+        width: 90%;
+    }
+    .Titre{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Titre{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+#navbar .menu .left li:nth-child(2) {
+  background: white;
+}
+#navbar .menu .left li:nth-child(2) a {
+  color: black;
+}

@@ -1,0 +1,49 @@
+html {
+  line-height: 1;
+}
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bar {
+  background: #e74c3c;
+  margin: 0.25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  clear: both;
+}
+
+.bar:nth-of-type(2n) {
+  background: #ed7669;
+}
+
+.bar .label {
+  font-size: 0.75em;
+  padding: 1em;
+  padding-right: 25px;
+  background: #3d3d3d;
+  width: 8em;
+  display: inline-block;
+  z-index: 2;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bar .label.light {
+  background: #575757;
+}
+
+.count {
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 0.75em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: #1B1F23;
+}

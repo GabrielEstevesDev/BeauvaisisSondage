@@ -1,0 +1,271 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#page {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: "InterB", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 30px;
+}
+
+.titre {
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e4e4e4;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blur {
+  min-width: 70%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+  padding-bottom: 40px;
+  background: white;
+  box-shadow: 3px -2px 25px 1px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 3px -2px 25px 1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 3px -2px 25px 1px rgba(0, 0, 0, 0.63);
+}
+
+.listealim {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+form {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+fieldset {
+  width: 400px;
+  border: none;
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+  border: 1px solid #008CBA;
+  outline: none;
+  border-radius: 5px;
+  width: 600px;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.ajout {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.ajout:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.envoi {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.envoi:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.supprimer {
+  padding: 2px;
+  margin: 1px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  border: 1px solid #f44336;
+}
+
+.supprimer:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+datalist {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  max-height: 10rem;
+  overflow-y: auto;
+  text-align: left;
+}
+
+datalist#browsers {
+  width: 600px;
+}
+
+option {
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 1px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+option:hover,
+.active {
+  background-color: lightblue;
+}
+
+#choisir {
+  margin: 10px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#aliments table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+#aliments th,
+#aliments td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#aliments th {
+  background-color: #ff9800;
+  /* couleur d'arrière-plan */
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  padding-top: 12px;
+  /* Décale le titre pour qu'il soit centré */
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  /* Met les titres en majuscule */
+  letter-spacing: 2px;
+  /* Ajoute un peu d'espace entre les lettres */
+  color: #fff;
+  /* couleur du texte */
+}
+
+#aliments tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#aliments tr:hover {
+  background-color: #ddd;
+}
+
+#aliments td:first-child {
+  width: 7%;
+}
+
+#aliments td:nth-child(2) {
+  width: 70%;
+}
+
+#aliments td:last-child {
+  width: 15%;
+}
+
+.supOption {
+  background: white;
+  border: 3px solid red;
+  margin-right: 15px;
+}
+
+.supOption:hover {
+  transform: scale(1.02);
+  background: red;
+}
+
+.btn {
+  width: 90%;
+  background: white;
+  font-family: "InterB", serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.4s;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background: rgb(59, 59, 59);
+  color: white;
+}
+
+section {
+  padding: 40px;
+}
+
+@media (max-width: 900px) {
+  datalist#browsers {
+    width: 400px;
+  }
+
+  input {
+    width: 400px;
+  }
+}

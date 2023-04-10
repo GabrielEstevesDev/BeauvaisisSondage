@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+	background-image: url("../src/background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#navbar .menu .left li:nth-child(4) {
+    background: white;
+}
+#navbar .menu .left li:nth-child(4) a {
+    color: black;
+ }
+@font-face {
+	font-family: 'Open Sans Light';
+	font-style: normal;
+	font-weight: 300;
+	src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+ }
+header{
+	height: 70.8px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:1100px) {
+	header {
+		height: 69.2px;
+	}
+}
+@media screen and (max-width:900px) {
+	header {
+		height: 74.8px;
+	}
+}
+
+
+.page {
+	margin: 0 auto;
+	width: 80%;
+	padding-bottom: 70px;
+	margin-bottom: 100px;
+	background-color: white;
+}
+
+
+
+div.education div.divCreches, div.div_maternelle {
+	display: inline-block;
+	width: 49%;
+}
+
+.titre_edu {
+	padding-top: 80px ;
+	margin: 0 0 5px 0;
+	font-family: 'Inter';
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.divCreches {
+	margin-left: 5px;
+	padding-top: 50px;
+	position: relative;
+}
+
+
+.sous_titre_creche {
+	margin-bottom: 20px;
+	margin-left: 38%;
+	font-family: 'Inter';
+	font-size: 20px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+	margin-left: 10%;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	width: 80%;
+}
+
+.zoomImg {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px 20px 5px 20px;
+	color: white;
+	font-family: "Arial";
+	bottom: 45px;
+	left: 24%;
+	width: 45%;
+	text-align: center;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal::-webkit-scrollbar {
+	display: none;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 50%;
+	max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+	}
+}
+
+.div_maternelle {
+	float: right;
+}
+
+.sous_titre_maternelle {
+	margin-top: 52px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'Inter';
+	font-size: 20px;
+}
+
+.coos_maternelle {
+	text-align: center;
+	font-family: "Open Sans Light";
+	font-size: 18px;
+	margin: 80px 40px 0 40px;
+}
+
+.divider {
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+	padding-bottom: 50px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.logement {
+	position: relative;
+}
+
+.img_logement {
+	width: 30%;
+	position: absolute;
+	right: 60px;
+	top: 0px;
+}
+
+.div_tloge {
+	margin: 0 0 0 18%;
+	width: 40%;
+}
+
+.titre_loge {
+	font-family: 'Inter';
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ST_plan_renov {
+	font-family: 'Inter';
+	font-size: 22px;
+	margin: 50px 0 0 28%;
+}
+
+.div_txt_plan_renov {
+	text-align: center;
+	width: 60%;
+	margin: 140px 0 0 20%;
+	font-family: 'Open Sans Light';
+	font-size: 20px;
+	text-align: center;
+}
+
+.div_txt_plan_renov p {
+	margin-top: 50px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -63%;
+	padding-right: 35px;
+}
+  
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.div_prgmLH {
+	margin-top: 100px;
+}
+
+.div_titre_PLH {
+	text-align: center;
+	font-family: 'Inter';
+	font-size: 22px;
+	margin-bottom: 100px;
+}
+
+.div_text_PLH p {
+	font-family: "Open Sans Light";
+	font-size: 20px;
+	width: 75%;
+	text-align: center;
+	margin: 50px 0 0 12%;
+}
+
+@media screen and (max-width:1300px) {
+	.ST_plan_renov {
+		margin-left: 25%;
+	}
+}
+
+@media screen and (max-width:900px) {
+	.page{
+		width: 90%;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.coos_maternelle {
+		font-size: 13px;
+		margin: 40px 40px 0 40px;
+	}
+
+	.sous_titre_creche {
+		margin-left: 30%;
+	}
+	
+
+	.tooltip .tooltiptext {
+		font-size: 13px;
+		margin-left: -55%;
+		width: 100%;
+	}
+
+	.ST_plan_renov {
+		font-family: 'Inter';
+		font-size: 22px;
+		margin: 50px 0 0 20%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.coos_maternelle {
+		font-size: 13px;
+		margin: 30px 40px 0 40px;
+	}
+
+	.div_tloge {
+		margin: 0 auto;
+		width: inherit;
+		text-align: center;
+	}
+
+	.ST_plan_renov {
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	.img_logement {
+		visibility: hidden;
+	}
+
+	.zoomImg {
+		left: 21%;
+		bottom: 20px;
+	}
+
+	.sous_titre_creche {
+		margin-left: 25%;
+	}
+
+	.tooltip .tooltiptext {
+		font-size: 11px;
+		margin-left: -52%;
+		width: 100%;
+	}
+
+	.div_text_PLH p {
+		font-family: "Open Sans Light";
+		font-size: 20px;
+		width: 75%;
+		text-align: center;
+		margin: 50px 0 0 12%;
+	}
+}
+
